@@ -1,0 +1,49 @@
+name: Bug report
+description: Report a reproducible problem with the lab tooling
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not attach binaries, certificates, private keys, raw `cmd` values, or personal identifiers.
+  - type: input
+    id: component
+    attributes:
+      label: Component
+      placeholder: server, launcher, patcher, setup, or cleanup
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Windows, Python, PowerShell, and x86/x64 versions
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Provide minimal, redacted commands and output.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: checkboxes
+    id: redaction
+    attributes:
+      label: Sensitive-data check
+      options:
+        - label: I removed binaries, keys, certificates, raw command envelopes, and personal identifiers.
+          required: true

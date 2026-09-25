@@ -1,0 +1,9 @@
+{
+  "path": "/en/module/vblicensing/certify",
+  "mode": "grant",
+  "error_reply": "ERROR: local license emulator has no matching response",
+  "grant_reply": ">AERO-LAB-GRANT<",
+  "fixed_response_file": null,
+  "replay_map_file": null,
+  "max_cmd_length": 16384
+}
